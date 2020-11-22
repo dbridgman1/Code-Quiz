@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
-    <link rel="stylesheet" href="./Assets/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-</head>
-<body>
-    <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <h1>Are you ready</h1>
-            <a href="game.html" class="btn">Play</a>
-            <a href="highscores.html" id="highscore-btn"class="btn">High Scores<i class="fas fa-crown"></i></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="Assets/style.css">
+        <title>Code Quiz</title>
+    </head>
+
+    <body>
+        <div id="top">
+            <div class="scores float-left"><input type="button" class="btn btn-primary" id="viewScoresButton" value="View High Scores" onclick="finalScoreContainer()"></input></div>
+            <div class="time float-right"><p>Time: <span id="timer"></span></p></div>
         </div>
-    </div>
-</body>Z
+        <hr>
+        <div class="header">
+            <h1 class="title"></h1>
+            <h2 class="directions"></h2>
+            <p class="finalScoreP"></p>
+        
+            <div class="buttons">
+            <input type="button" class="btn btn-primary" id="startButton" value="Start Quiz" onclick="startTime()"></input>
+            </div>
+        </div>
+
+        <div id="quiz" class="hide">
+            <h3 id="question"></h3>
+            <div class="button-grp" id="buttonGroup">
+                <button class="btn btn-primary" id="btn0"><span id="choice0"></span></button>
+                <br>
+                <button class="btn btn-primary" id="btn1"><span id="choice1"></span></button>
+                <br>
+                <button class="btn btn-primary" id="btn2"><span id="choice2"></span></button>
+                <br>
+                <button class="btn btn-primary" id="btn3"><span id="choice3"></span></button>
+            </div>
+            <hr>
+            <h4 id="correctCheck">CORRECT!</h4>
+            <h4 id="incorrectCheck">INCORRECT!</h4>
+        </div>
+
+        <div id="finalScoreContainer">
+        <div class="highscores">
+            <ul id="highscore-list"></ul>
+            <form id="highscore-form" method="POST">
+              <label for="highscore-text">Add Your Initials:</label>
+              <input type="text" name="highscore-text" id="highscore-text">
+            </form>
+          </div>
+          </div>
+       
+        <script src="Assets/script.js"></script>
+
+    </body>
+
 </html>
+
