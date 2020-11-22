@@ -10,7 +10,7 @@
 
 <br>
 
-Link for application: [Bridgman Portfolio](https://https://dbridgman1.github.io/Code-Quiz/)
+Link for application: [Bridgman Portfolio](https://dbridgman1.github.io/Code-Quiz/)
 
 ## Fucntionality
 
