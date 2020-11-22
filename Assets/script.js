@@ -24,7 +24,7 @@ finalScoreContainerEl.setAttribute("style", "visibility:hidden");
 
 var finalScorePEl = document.querySelector(".finalScoreP");
 
-// Start Quiz, Start 60 Second Countdown
+// Start Quiz
 function startTime() {
   event.preventDefault();
 
@@ -121,27 +121,27 @@ function guess(id, guess) {
 
 var questions = [
   new Question(
-    "1. Commonly used data types do not include...",
-    ["Strings", "Booleans", "Alerts", "Numbers"],
-    "Alerts"
+    "1. How many people are currently alive on planet earth?",
+    ["100 Billion", "10 Billion", "7 Billion", "5 Billion"],
+    "7 Billion"
   ),
   new Question(
-    "2. The condition in an if/then is enclosed within...",
-    ["Quotes", "Curly Braces", "Parenthesis", "Square Brackets"],
-    "Curly Braces"
+    "2. How many times have the yankees won the world series?",
+    ["27", "22", "32", "15"],
+    "27"
   ),
   new Question(
-    "3. Arrays in Javascript can be used to store...",
-    ["Numbers in a string", "Other arrays", "Booleans", "All of the above"],
-    "All of the above"
+    "3. How much fun is coding?",
+    ["I hate coding", "It's not fun", "No me gusta", "It's the greatest"],
+    "It's the greatest"
   ),
   new Question(
-    "4. Strings values must be enclosed within _________ when being assigned to variables.",
-    ["Quotes", "Commas", "Curly Brackets", "Parenthesis"],
-    "Quotes"
+    "4. Who is the governor of Connecticut",
+    ["Donald Duck", "Mel Gipson", "Ned Lamont", "Elvis"],
+    "Ned Lamont"
   ),
   new Question(
-    "5. A very useful tool used during development and debugging for printing content to the debugger is..",
+    "5. What line of code allows you to get information to show in the console",
     ["JavaScript", "Terminal/Bash", "Console.log", "For Loops"],
     "Console.log"
   ),
