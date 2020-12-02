@@ -8,8 +8,13 @@ A timed code quiz with multiple-choice questions. This app will run in the brows
 
 ## Deployment
 
-Link for application: [Bridgman Portfolio](https://dbridgman1.github.io/Code-Quiz/)
+Link for application: [Code Quiz](https://dbridgman1.github.io/Code-Quiz/)
 
 ## Fucntionality
 
 ![Portfolio](Assets/Capture.JPG)
+
+## Credits 
+
+Resource used to help create this application: [YouTube Link](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2s)
+
