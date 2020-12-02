@@ -14,17 +14,16 @@ input {
     padding: 1.5rem;
     font-size: 1.8rem;
     border: none;
-    box-shadow: 5px 10px black;
 }
 
-input::placeholder {
-    color: #aaa;
-}
+.a {
+    border: white solid 3px;
 
+}
 #username {
     margin-bottom: 3rem;
     width: 100%;
-    outline: none;
+    box-shadow: none;
 }
 
 #end-text {
@@ -34,11 +33,6 @@ input::placeholder {
 }
 
 #saveScoreBtn {
-    border: none;
+    border: white solid 3px;
 }
 
-.fa-home {
-    margin-left: 1rem;
-    font-size: 2rem;
-    color: black;
-}
