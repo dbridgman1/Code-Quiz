@@ -5,9 +5,8 @@ body {
 
 .choice-container {
     display: flex;
-    margin-bottom: 0.8rem;
+    margin-bottom: .5rem;
     width: 100%;
-    border-radius: 5px;
     background:rgb(83, 219, 219);
     color: rgb(0, 0, 0);
 }
@@ -20,7 +19,7 @@ body {
 }
 
 .choice-prefix {
-    padding: 2rem 2.5rem;
+    padding: 2rem;
     font-size: 2rem;
 }
 
@@ -30,22 +29,16 @@ body {
     font-size: 2rem;
 }
 
-.correct {
-    background: linear-gradient(limegreen);
-}
-
-.incorrect {
-    background: red;
-}
 
 #hud {
     display: flex;
-    justify-content: space-between; /* Pushes the contents out to the edge */
+    justify-content: space-between;
 }
 
 .hud-prefix {
     text-align: center;
     font-size: 2rem;
+    color: purple;
 }
 
 .hud-main-text {
@@ -55,7 +48,7 @@ body {
 #progessBar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid greenyellow;
+    border: 2rem solid greenyellow;
     margin-top: 2rem;
     border-radius: 50px;
     overflow: hidden;
@@ -63,8 +56,8 @@ body {
 
 #progressBarFull {
     height: 50px;
-    background: greenyellow;
-    width: 100px;
+    background: red;
+    width: 120px;
 }
 
 @media screen and (max-width: 768px) {
