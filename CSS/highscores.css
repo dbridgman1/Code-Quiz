@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    padding: 60px;
+    font-size: 4em;
+}
+
+.btn {
+    background: lightgray;
+    font-size: 3em;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 10px gray; 
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
