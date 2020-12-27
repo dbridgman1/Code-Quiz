@@ -11,7 +11,7 @@ let acceptingAnswers = true;
 let score = 0; 
 let questionCounter = 0; 
 let availableQuestions = [];
-let totalTime = 60;
+let totalTime = 10;
 let min = 0;
 let sec = 0;
 let counter = 0;
@@ -126,6 +126,7 @@ function gameTimer() {
 
       if (totalTime === 0) {
           clearInterval(timer);
+          console.log(totalTime)
       }
 
      
@@ -139,11 +140,17 @@ incrementScore = num => {
 }
 
 function finalScore() {
-
+    let pull = localStorage.getItem('mostRecentScore')
+    
 }
 
 startGame()
 
-clickStart.addEventListener('click', () => {
-  gameTimer();
+$(document).ready(function() {
+
+    $('#startTime').on('click', function () {
+        gameTimer();
+
+});
+
 });
