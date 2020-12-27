@@ -12,7 +12,7 @@ Link for application: [Code Quiz](https://dbridgman1.github.io/Code-Quiz/)
 
 ## Fucntionality
 
-![Portfolio](Assets/Capture.JPG)
+![Portfolio](Assets/Capture1.JPG)
 
 ## Credits 
 
