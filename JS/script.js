@@ -121,19 +121,14 @@ choices.forEach(choice => {
 
 function gameTimer() {
   let timer = setInterval(function () {
-      counter++
-      min = Math.floor((totalTime - counter) / 60);
-      sec = totalTime - min * 60 - counter;
+      totalTime--;
+      theTimer.textContent = (`${totalTime} seconds left`)
 
-      if (counter >= totalTime) {mostRecentScore
+      if (totalTime === 0) {
           clearInterval(timer);
       }
 
-      if (sec <= 9) {
-          theTimer.innerHTML = `${min}:0${sec}`;
-      } else {
-          theTimer.innerHTML = `${min}:${sec}`;
-      }
+     
   }, 1000);
 }
 
@@ -143,18 +138,12 @@ incrementScore = num => {
     scoreText.innerText = score;
 }
 
+function finalScore() {
+
+}
+
 startGame()
 
 clickStart.addEventListener('click', () => {
   gameTimer();
-})
-
-
-
-
-
-
-
-
-
-
+});

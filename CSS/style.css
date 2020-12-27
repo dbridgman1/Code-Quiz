@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
 
 body {
-    background-color: pink;
+    background-color: white;
 }
 
 * {
@@ -12,9 +12,15 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.col {
+    font-size: 20px;
+}
+#mainPageTimer {
+    margin-left: 650px;
+}
 h1 {
     font-size: 3rem;
-    color: purple;
+    color: black;
     margin-bottom: 4rem;
 }
 
@@ -51,15 +57,15 @@ h1 {
 }
 
 .btn {
-    font-size: 4rem;
-    padding: 1rem 0;
+    font-size: 3rem;
+    padding: 15px;
     width: 30 rem;
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: green;
-    background: black;
-    border-radius: 0px;
+    color: black;
+    background: lightgray;
+    border-radius: 10px;
 }
 
 .btn:hover {
