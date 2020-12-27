@@ -141,7 +141,7 @@ incrementScore = num => {
 
 function finalScore() {
     let pull = localStorage.getItem('mostRecentScore')
-    
+    $('#finalScore').text(pull)
 }
 
 startGame()
@@ -150,7 +150,17 @@ $(document).ready(function() {
 
     $('#startTime').on('click', function () {
         gameTimer();
+    });
 
-});
+    function finalScore() {
+        let pull = localStorage.getItem('mostRecentScore')
+        let finalScore = document.getElementById('finalScore')
 
+        if(availableQuestions.length === 0 || questionCounter > maxQuestions) {
+            finalScore.textContent = pull
+        }
+        
+    }
+
+    finalScore()
 });
